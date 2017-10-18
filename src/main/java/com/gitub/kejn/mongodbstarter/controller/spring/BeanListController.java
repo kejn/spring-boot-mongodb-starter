@@ -1,7 +1,5 @@
 package com.gitub.kejn.mongodbstarter.controller.spring;
 
-import lombok.AllArgsConstructor;
-import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 class BeanListController {
 
-    @NonNull private final ApplicationContext context;
+    private final ApplicationContext context;
 
     @RequestMapping("/beanlist")
     public List<String> loadedBeansDump() {
